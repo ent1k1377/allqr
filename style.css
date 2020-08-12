@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.page{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*HEADER*/
+.header{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    
+    width: 1200px;
+    margin: 20px auto;
+    margin-bottom: 10px;
+}
+
+.header img{
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    
+}
+hr{
+    width: 100%;
+    border: 2px solid #034794;
+    margin-bottom: 7px;
+}
+
+/*MAINCONTENT*/
+.main-content{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*SECTION*/
+.section{
+    width: 60%;
+}
+.section form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.section h1{
+    margin-bottom: 10px;
+}
+.section textarea{
+    outline: none;
+    resize: vertical;
+    padding-left: 8px;
+    padding-top: 5px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.section .radioButton{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 18px;
+
+}
+.section .radioButton label{
+    padding: 0 10px;
+}
+.section .range{
+    font-size: 18px;
+    margin: 5px 0;
+}
+.section input[type="submit"]{
+    width: 100%;
+    background: #0075FF;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 15px;
+    padding: 10px 0;
+    cursor: pointer;
+    outline: none;
+}
+.section input[type="submit"]:hover{
+    outline: none;
+}
+.section .qr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    border: 1px solid rgb(102, 100, 100);
+    margin-bottom: 20px;
+}
+.section .qr img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*QRCODE*/
+.qrCode{
+    width: 35%; 
+}
+.qrCode h2{
+    margin-bottom: 15px;
+}
+.qrCode p{
+    margin-bottom: 5px;
+}
+.qrCode .qr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    border: 1px solid rgb(102, 100, 100);
+    margin-bottom: 20px;
+}
+.qrCode img{
+    max-width: 100%;
+    height: auto;
+}
+.range{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.range span{
+    margin-right: 10px;
+}
+.range input{
+    flex-grow: 1;
+}
+/*FOOTER*/
+footer{
+    margin-top: auto;
+    margin-bottom: 10px;
+
+}
+.span{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .header, .main-content, .span{
+        width: 98%;
+    }
+}
+@media (max-width: 767px) {
+    .header, .main-content, .span{
+        width: 98%;
+
+    }
+    .main-content{
+        flex-wrap: wrap;
+    }
+    .section{
+        width: 100%;
+    }
+    .qrCode{
+        width: 100%; 
+    }
+}
